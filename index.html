@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>XFOX13’s Texture Packs</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
     <style>
       body {
         margin: 0;
@@ -46,17 +46,12 @@
   </head>
   <body>
     <h1>Welcome to XFOX13’s Texture Packs</h1>
-
-    <!-- Download Button -->
     <a class="button" href="Green-Tpack/Green-Tpack.zip" download>Download Green T-pack</a>
 
-    <!-- Add more buttons here if you want more packs -->
-    <!-- <a class="button" href="Green-Tpack/AnotherPack.zip" download>Download Another Pack</a> -->
-
-    <!-- Background Music (starts on first click) -->
     <script>
-      window.addEventListener('click', () => {
-        const audio = new Audio('assets/music.mp3');
+      // Music starts after first click
+      window.addEventListener("click", () => {
+        const audio = new Audio("assets/music.mp3");
         audio.loop = true;
         audio.play();
       }, { once: true });
