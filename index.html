@@ -28,14 +28,17 @@
         display: inline-block;
         background: linear-gradient(to bottom right, #009944, #002200);
         color: #ffffff;
-        padding: 10px 20px;
-        margin: 10px;
+        padding: 8px 14px;
+        margin: 10px auto;
         text-decoration: none;
         border-radius: 10px;
         font-weight: bold;
-        font-size: 0.9em;
+        font-size: 0.85em;
         box-shadow: 0 0 10px #00ff99;
         transition: all 0.3s ease;
+        width: fit-content;
+        max-width: 220px;
+        white-space: nowrap;
       }
 
       .button:hover {
@@ -46,10 +49,12 @@
   </head>
   <body>
     <h1>Welcome to XFOX13’s Texture Packs</h1>
+
+    <!-- Download Button -->
     <a class="button" href="Green-Tpack/Green-Tpack.zip" download>Download Green T-pack</a>
 
+    <!-- Background Music (starts on first click) -->
     <script>
-      // Music starts after first click
       window.addEventListener("click", () => {
         const audio = new Audio("assets/music.mp3");
         audio.loop = true;
