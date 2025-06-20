@@ -10,37 +10,64 @@
         background: url('assets/bg.jpg') no-repeat center center fixed;
         background-size: cover;
         font-family: 'Orbitron', sans-serif;
-        color: #00ff99;
-        text-align: center;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        color: #000000;
+      }
+
+      .box {
+        background-color: #ffffff;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        width: fit-content;
+        box-shadow: 0 0 10px #00ff99;
       }
 
       h1 {
-        font-size: 2.5em;
-        text-shadow: 0 0 10px #00ff99;
-        margin-bottom: 10px;
+        font-size: 1.8em;
+        margin: 0 0 10px 0;
       }
 
       p {
         font-size: 1em;
-        margin-top: 0;
-        margin-bottom: 20px;
+        margin: 0 0 15px 0;
       }
 
       .button {
         display: inline-block;
         background: linear-gradient(to bottom right, #009944, #002200);
         color: #ffffff;
-        padding: 8px 14px;
-        margin: 10px auto;
+        width: 240px;
+        padding: 10px 0;
+        text-align: center;
         text-decoration: none;
         border-radius: 10px;
         font-weight: bold;
-        font-size: 0.85em;
+        font-size: 0.9em;
         box-shadow: 0 0 10px #00ff99;
         transition: all 0.3s ease;
-        width: auto;
-        max-width: 220px
+      }
+
+      .button:hover {
+        background: linear-gradient(to top left, #00cc66, #003300);
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>XFOX13’s Texture Packs</h1>
+      <p>Download my custom Minecraft pack:</p>
+      <a class="button" href="Green-Tpack/Green-Tpack.zip" download>Download</a>
+    </div>
+
+    <script>
+      window.addEventListener("click", () => {
+        const audio = new Audio("assets/music.mp3");
+        audio.loop = true;
+        audio.play().catch((err) => {
+          console.error("Music failed to play:", err);
+        });
+      }, { once: true });
+    </script>
+  </body>
+</html>
