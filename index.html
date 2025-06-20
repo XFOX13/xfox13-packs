@@ -11,10 +11,7 @@
         background-size: cover;
         font-family: 'Orbitron', sans-serif;
       }
-<div class="icon-wrapper">
-  <div class="spinner-ring"></div>
-  <div class="icon-center">🎮</div>
-</div>
+
       /* Top-right floating title */
       .corner-title {
         position: absolute;
@@ -23,6 +20,44 @@
         color: #ffffff;
         font-size: 1.2em;
         text-shadow: 0 0 5px #00ff99;
+      }
+
+      /* Spinning icon at top center */
+      .icon-wrapper {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 100px;
+        z-index: 10;
+      }
+
+      .spinner-ring {
+        width: 100px;
+        height: 100px;
+        border: 20px solid transparent;
+        border-top: 20px solid #00ff99;
+        border-right: 20px solid #00ccff;
+        border-bottom: 20px solid #ff00cc;
+        border-left: 20px solid #ffcc00;
+        border-radius: 50%;
+        animation: spin 2s linear infinite;
+      }
+
+      .icon-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2em;
+        color: white;
+        text-shadow: 0 0 5px #000;
+      }
+
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
       }
 
       /* White box in top-left */
@@ -64,12 +99,18 @@
     </style>
   </head>
   <body>
+    <!-- Spinning icon -->
+    <div class="icon-wrapper">
+      <div class="spinner-ring"></div>
+      <div class="icon-center">🎮</div>
+    </div>
+
     <!-- Top-right title -->
-    <div class="corner-title">XFOX13's Texture Packs</div>
+    <div class="corner-title">XFOX13 Texture Packs</div>
 
     <!-- White box with button -->
     <div class="box">
-      <h1>Green Texture Pack</h1>
+      <h1>Green Texturepack</h1>
       <a class="button" href="Green-Tpack/Green-Tpack.zip" download>Download Now</a>
     </div>
 
