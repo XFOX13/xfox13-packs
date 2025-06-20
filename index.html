@@ -23,28 +23,15 @@
         text-shadow: 0 0 5px #00ff99;
       }
 
-      /* Centered spinning icon */
+      /* Top-center icon and ring */
       .icon-wrapper {
         position: absolute;
-        top: 50%;
+        top: 20px;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translateX(-50%);
         width: 100px;
         height: 100px;
         z-index: 10;
-      }
-
-      .spinner-ring {
-        position: relative;
-        width: 100px;
-        height: 100px;
-        border: 20px solid transparent;
-        border-top: 20px solid #00ff99;
-        border-right: 20px solid #00ccff;
-        border-bottom: 20px solid #ff00cc;
-        border-left: 20px solid #ffcc00;
-        border-radius: 50%;
-        animation: spin 2s linear infinite;
       }
 
       .icon-center {
@@ -56,6 +43,22 @@
         color: white;
         text-shadow: 0 0 5px #000;
         pointer-events: none;
+      }
+
+      .spinner-ring {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        border: 20px solid transparent;
+        border-top: 20px solid #00ff99;
+        border-right: 20px solid #00ccff;
+        border-bottom: 20px solid #ff00cc;
+        border-left: 20px solid #ffcc00;
+        border-radius: 50%;
+        animation: spin 2s linear infinite;
+        z-index: 1;
       }
 
       @keyframes spin {
@@ -102,11 +105,10 @@
     </style>
   </head>
   <body>
-    <!-- Centered spinning icon with emoji inside -->
+    <!-- Top-center icon and ring -->
     <div class="icon-wrapper">
-      <div class="spinner-ring">
-        <div class="icon-center">🎮</div>
-      </div>
+      <div class="icon-center">🎮</div>
+      <div class="spinner-ring"></div>
     </div>
 
     <!-- Top-right title -->
