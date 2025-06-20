@@ -18,25 +18,21 @@
         padding: 20px;
         margin: 20px;
         border-radius: 10px;
-        width: fit-content;
+        width: 260px;
         box-shadow: 0 0 10px #00ff99;
       }
 
       h1 {
-        font-size: 1.8em;
+        font-size: 1.5em;
         margin: 0 0 10px 0;
       }
 
-      p {
-        font-size: 1em;
-        margin: 0 0 15px 0;
-      }
-
       .button {
-        display: inline-block;
+        display: block;
+        width: 240px;
+        margin: 10px auto 0 auto;
         background: linear-gradient(to bottom right, #009944, #002200);
         color: #ffffff;
-        width: 240px;
         padding: 10px 0;
         text-align: center;
         text-decoration: none;
@@ -55,4 +51,18 @@
   </head>
   <body>
     <div class="box">
-      <h1>XFOX
+      <h1>XFOX13’s Green T-pack</h1>
+      <a class="button" href="Green-Tpack/Green-Tpack.zip" download>Download Now</a>
+    </div>
+
+    <script>
+      window.addEventListener("click", () => {
+        const audio = new Audio("assets/music.mp3");
+        audio.loop = true;
+        audio.play().catch((err) => {
+          console.error("Music failed to play:", err);
+        });
+      }, { once: true });
+    </script>
+  </body>
+</html>
