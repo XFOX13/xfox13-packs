@@ -5,6 +5,32 @@
     <meta charset="UTF-8" />
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
     <style>
+      .credits {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 0.9em;
+  font-family: 'Orbitron', sans-serif;
+  z-index: 100;
+}
+
+.credits .copilot,
+.credits .year {
+  color: #001a66; /* dark blue */
+}
+
+.credits .channel {
+  color: #3399ff; /* light blue */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.credits .channel:hover {
+  text-decoration: underline;
+}
       body {
         margin: 0;
         padding: 0;
