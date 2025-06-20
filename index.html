@@ -27,8 +27,8 @@
         top: 20px;
         left: 50%;
         transform: translateX(-50%);
-        width: 120px;
-        height: 120px;
+        width: 200px;
+        height: 200px;
         z-index: 10;
       }
 
@@ -37,32 +37,34 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 72px;
-        height: 72px;
+        width: 120px;
+        height: 120px;
         border-radius: 50%;
         object-fit: cover;
         pointer-events: none;
+        z-index: 2;
       }
 
       .spinner-ring {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 120px;
-        height: 120px;
-        border: 12px solid transparent;
-        border-top: 12px solid #00ff99;
-        border-right: 12px solid #00ccff;
-        border-bottom: 12px solid #ff00cc;
-        border-left: 12px solid #ffcc00;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        border: 10px solid transparent;
+        border-top: 10px solid #00ff99;
+        border-right: 10px solid #00ccff;
+        border-bottom: 10px solid #ff00cc;
+        border-left: 10px solid #ffcc00;
         border-radius: 50%;
         animation: spin 2s linear infinite;
         z-index: 1;
       }
 
       @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
+        0% { transform: translate(-50%, -50%) rotate(0deg); }
+        100% { transform: translate(-50%, -50%) rotate(360deg); }
       }
 
       .box {
@@ -114,7 +116,7 @@
 
     <!-- White box with button -->
     <div class="box">
-      <h1>Green Texture Pack</h1>
+      <h1>Green Texturepack</h1>
       <a class="button" href="Green-Tpack/Green-Tpack.zip" download>Download Now</a>
     </div>
 
