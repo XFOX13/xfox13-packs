@@ -10,33 +10,40 @@
         background: url('assets/bg.jpg') no-repeat center center fixed;
         background-size: cover;
         font-family: 'Orbitron', sans-serif;
-        color: #000000;
       }
 
+      /* Top-right floating title */
+      .corner-title {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #ffffff;
+        font-size: 1.2em;
+        text-shadow: 0 0 5px #00ff99;
+      }
+
+      /* White box in top-left */
       .box {
         background-color: #ffffff;
         padding: 20px;
         margin: 20px;
         border-radius: 10px;
-        width: fit-content;
+        width: 360px;
         box-shadow: 0 0 10px #00ff99;
+        color: #000000;
       }
 
       h1 {
-        font-size: 1.8em;
+        font-size: 1.4em;
         margin: 0 0 10px 0;
       }
 
-      p {
-        font-size: 1em;
-        margin: 0 0 15px 0;
-      }
-
       .button {
-        display: inline-block;
+        display: block;
+        width: 240px;
+        margin: 10px auto 0 auto;
         background: linear-gradient(to bottom right, #009944, #002200);
         color: #ffffff;
-        width: 240px;
         padding: 10px 0;
         text-align: center;
         text-decoration: none;
@@ -54,12 +61,16 @@
     </style>
   </head>
   <body>
+    <!-- Top-right title -->
+    <div class="corner-title">XFOX13 Texture Packs</div>
+
+    <!-- White box with button -->
     <div class="box">
-      <h1>XFOX13’s Texture Packs</h1>
-      <p>Download my custom Bloxd.io pack:</p>
-      <a class="button" href="Green-Tpack/Green-Tpack.zip" download>Download</a>
+      <h1>Green Texturepack</h1>
+      <a class="button" href="Green-Tpack/Green-Tpack.zip" download>Download Now</a>
     </div>
 
+    <!-- Music on first click -->
     <script>
       window.addEventListener("click", () => {
         const audio = new Audio("assets/music.mp3");
