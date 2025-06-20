@@ -22,12 +22,12 @@
         text-shadow: 0 0 5px #00ff99;
       }
 
-      /* Spinning icon at top center */
+      /* Centered spinning icon */
       .icon-wrapper {
         position: absolute;
-        top: 20px;
+        top: 50%;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%, -50%);
         width: 100px;
         height: 100px;
         z-index: 10;
@@ -99,7 +99,7 @@
     </style>
   </head>
   <body>
-    <!-- Spinning icon -->
+    <!-- Centered spinning icon -->
     <div class="icon-wrapper">
       <div class="spinner-ring"></div>
       <div class="icon-center">🎮</div>
